@@ -38,7 +38,8 @@ const config = {
       lines: 100,
       statements: 100,
     },
-  },
+  }
+  
 }
 
 module.exports = createJestConfig(config)
