@@ -114,7 +114,7 @@ export default function Home() {
             activeData?.getUserNotFinishedTasksLists?.map((task: any) => (
               <div
                 key={task._id}
-                className="border p-4 rounded mb-4 flex justify-between"
+                className="border p-5 rounded mb-4 flex justify-between"
               >
                 <div>
                   <h3 className="font-bold">{task.taskName}</h3>
