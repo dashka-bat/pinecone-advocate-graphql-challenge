@@ -100,7 +100,7 @@ export default function Home() {
       {/* Active Tasks */}
       <section>
         <h2 className="text-2xl font-semibold mb-4">Active Tasks</h2>
-        <div className="space-y-4">
+        <div className="space-y-5">
           {activeData?.getUserNotFinishedTasksLists?.length === 0 ? (
             <div>
               <p>No active tasks found.</p>
