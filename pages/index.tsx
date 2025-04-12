@@ -101,14 +101,14 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-semibold mb-4">Active Tasks</h2>
         <div className="space-y-5">
+          <Link href={"/addTask"}>
+            <button>
+              <MessageSquareDiff />
+            </button>
+          </Link>
           {activeData?.getUserNotFinishedTasksLists?.length === 0 ? (
             <div>
               <p>No active tasks found.</p>
-              <Link href={"/addTask"}>
-                <button>
-                  <MessageSquareDiff />
-                </button>
-              </Link>
             </div>
           ) : (
             activeData?.getUserNotFinishedTasksLists?.map((task: any) => (
