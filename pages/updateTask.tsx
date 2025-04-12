@@ -44,6 +44,9 @@ export default function UpdateTask({
   task,
   userId,
 }: UpdateTaskProps) {
+  if (!task) {
+    return <p className="text-red-600">Даалгаврын мэдээлэл олдсонгүй.</p>;
+  }
   const [taskName, setTaskName] = useState(task.taskName || "");
   const [description, setDescription] = useState(task.description || "");
   const [priority, setPriority] = useState(task.priority || 1);
