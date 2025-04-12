@@ -103,6 +103,7 @@ export default function Home() {
         <div className="space-y-5">
           <Link href={"/addTask"}>
             <button>
+              add Task
               <MessageSquareDiff />
             </button>
           </Link>
